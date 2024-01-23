@@ -1,6 +1,18 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let string= word.toLowerCase();
+  let neWordarray= Object.assign([], string);;
+  let reverseWord= neWordarray.reverse();
+  let joinedWord= reverseWord.join("");
+  if(string === joinedWord) {
+
+  return (true);
+  }else if (string!== joinedWord) {
+  
+    return(false);
+  }
 }
+
 
 /* 
   Add your pseudocode here
